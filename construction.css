@@ -105,12 +105,12 @@ li:hover{
     color: #555;
     line-height: 1.6;
 }
-@media (max-width: 768px) {
+@media (max-width: 508px) {
     .list {
         display: none; /* Hide the menu completely on small screens */
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 508px) {
     .pharagraph h1 {
         font-size: 2.5rem; /* Smaller font size for mobile */
     }
@@ -191,7 +191,7 @@ li:hover{
     margin-top: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 508px) {
     .services {
         flex-direction: column; /* Stacks the items vertically on smaller screens */
         align-items: center;
@@ -270,7 +270,7 @@ li:hover{
         margin: 0;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 508px) {
         .projects h1 {
             font-size: 2em;
         }
@@ -391,7 +391,7 @@ li:hover{
         margin: 0;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 508px) {
         .footer-container {
             flex-direction: column;
             align-items: center;
