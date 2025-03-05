@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
+header{
+background-image: url('R.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 40rem;
+}
+header .logo{
+color: white;
+margin: 5px;
+padding-top: 2rem;
+padding-left: 2REM;
+font-weight: 600;
+text-shadow: thistle 5px 0;
+background-color:transparent;
+width: 6rem;
+
+}
+header .list ul{
+    color: white;
+    font-weight: 600;
+    display: flex;
+    margin-left: 70%;
+    text-decoration: none;
+    background-color: rgb(48, 57, 61);
+    width: 25%;
+    cursor: pointer;
+    border-radius: 10px;
+    border:2px solid #ff0000;
+    text-decoration: none;
+}
+li{
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: white; /* Keeping white text color */
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: yellow; /* Hover color change */
+  }
+li:hover{
+    text-decoration: underline;
+    border-bottom: 2px solid rgb(0, 132, 255);
+    background-color: white;
+    color: black;
+    background-size:2rem;
+}
+.list ul li :hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+.list li{
+    margin: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.pharagraph{
+    color: white;
+    margin-top: 20rem;
+    margin-left: 3rem;
+    
+}
+.pharagraph h1{
+    font-size: 4rem;
+    padding-top: 2rem;
+}
+.pharagraph h2{
+    font-size: 2rem;
+}
+
+.service {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.top {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.top h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.top p, .top h2 {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    .list {
+        display: none; /* Hide the menu completely on small screens */
+    }
+}
+@media (max-width: 768px) {
+    .pharagraph h1 {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+    }
+
+    .pharagraph h2 {
+        font-size: 1.3rem; /* Smaller font size for mobile */
+    }
+
+    .pharagraph {
+        margin-top: 20px; /* Reduced margin for mobile */
+    }
+}
+
+/* For extra small screens */
+@media (max-width: 480px) {
+    .pharagraph h1 {
+        font-size: 2rem; /* Even smaller font size for very small screens */
+    }
+
+    .pharagraph h2 {
+        font-size: 1.1rem; /* Even smaller font size for very small screens */
+    }
+
+    .pharagraph {
+        margin-top: 15px; /* Reduced margin for very small screens */
+    }
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.services div {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.services div i {
+    font-size: 3rem;
+    color: #4CAF50; /* Green icon color */
+    margin-bottom: 20px;
+}
+
+.services div h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.services div p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.services div img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column; /* Stacks the items vertically on smaller screens */
+        align-items: center;
+    }
+
+    .services div {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-bottom: 30px;
+    }
+
+    .top h1 {
+        font-size: 2rem;
+    }
+
+    .top p, .top h2 {
+        font-size: 1rem;
+    }}
+
+    .projects {
+        text-align: center;
+        padding: 40px 20px;
+        background-color: #f4f4f4; /* Light background for contrast */
+    }
+
+    .projects h1 {
+        font-size: 2.5em;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .projects p {
+        font-size: 1.2em;
+        color: #555;
+        margin-bottom: 30px;
+    }
+
+    .projects h2 {
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 40px;
+        line-height: 1.6;
+    }
+
+    .pro-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .pro-list div {
+        background-color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pro-list div:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .pro-list img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .pro-list p {
+        font-size: 1em;
+        color: #333;
+        padding: 10px;
+        background-color: #fafafa;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .projects h1 {
+            font-size: 2em;
+        }
+
+        .projects h2 {
+            font-size: 1.2em;
+        }
+
+        .pro-list {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+    }
+
+
+.about-us {
+    margin: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.about-us h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tables {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.table {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 20px 20px rgba(234, 6, 6, 0.1);
+}
+
+.table h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.table p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 40px 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .footer-container div {
+        width: 22%;
+        min-width: 250px;
+        padding: 10px;
+    }
+
+    .footer-info h3, .footer-links h3, .footer-contact h3, .footer-social h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+
+    .footer-info p, .footer-contact p {
+        font-size: 1rem;
+        color: #ccc;
+        line-height: 1.6;
+    }
+
+    .footer-links ul, .footer-social ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .footer-links ul li, .footer-social ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a, .footer-social a {
+        color: #ccc;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover, .footer-social a:hover {
+        color: #4CAF50; /* Green hover effect */
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 1rem;
+        color: #ccc;
+    }
+
+    .footer-bottom p {
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-container div {
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+        }
+    }
+
