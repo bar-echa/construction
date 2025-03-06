@@ -27,54 +27,65 @@ background-color:transparent;
 width: 6rem;
 
 }
-header .list ul{
-    color: white;
-    font-weight: 600;
+.list {
+    position:absolute; 
+    top: 20%;
+    right: 10px; 
+    transform: translateY(-50%); 
+    z-index: 10; 
+}
+
+
+.list ul {
     display: flex;
-    margin-left: 70%;
-    text-decoration: none;
-    background-color: rgb(48, 57, 61);
-    width: 25%;
-    cursor: pointer;
-    border-radius: 10px;
-    border:2px solid #ff0000;
-    text-decoration: none;
-}
-li{
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
-a {
-    text-decoration: none;
-    color: white; /* Keeping white text color */
-  }
-
-  a:hover {
-    text-decoration: underline;
-    color: yellow; /* Hover color change */
-  }
-li:hover{
-    text-decoration: underline;
-    border-bottom: 2px solid rgb(0, 132, 255);
-    background-color: white;
-    color: black;
-    background-size:2rem;
-}
-.list ul li :hover{
-    color: black;
-    background-color: rgb(255, 255, 255);
-}
-
-.list li{
-    margin: 10px;
-    text-decoration: none;
+    flex-direction: column;
     list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+
 }
-.pharagraph{
-    color: white;
-    margin-top: 20rem;
-    margin-left: 3rem;
-    
+.list li {
+    margin: 10px 0;
+}
+
+
+.list a {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 14px; 
+    font-weight: 400; 
+    text-transform: uppercase;
+    padding: 8px 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    display: block;
+}
+
+.list a:hover {
+    color: #007BFF;
+    transform: translateX(10px); 
+}
+
+
+.list a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007BFF;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+
+.list a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 .pharagraph h1{
     font-size: 4rem;
@@ -86,9 +97,8 @@ li:hover{
 
 .service {
     padding: 50px 20px;
-    background-color: #f9f9f9; /* Light background for contrast */
+    background-color: #f9f9f9; 
 }
-
 .top {
     text-align: center;
     margin-bottom: 40px;
@@ -107,35 +117,34 @@ li:hover{
 }
 @media (max-width: 500px) {
     .list {
-        display: none; /* Hide the menu completely on small screens */
+        display: none; 
     }
 }
 @media (max-width: 500px) {
     .pharagraph h1 {
-        font-size: 2.5rem; /* Smaller font size for mobile */
+        font-size: 2.5rem; 
     }
 
     .pharagraph h2 {
-        font-size: 1.3rem; /* Smaller font size for mobile */
+        font-size: 1.3rem;
     }
 
     .pharagraph {
-        margin-top: 20px; /* Reduced margin for mobile */
+        margin-top: 20px; 
     }
 }
 
-/* For extra small screens */
+
 @media (max-width: 480px) {
     .pharagraph h1 {
-        font-size: 2rem; /* Even smaller font size for very small screens */
+        font-size: 2rem; 
     }
-
+}
     .pharagraph h2 {
-        font-size: 1.1rem; /* Even smaller font size for very small screens */
-    }
+        font-size: 1.1rem; 
 
     .pharagraph {
-        margin-top: 15px; /* Reduced margin for very small screens */
+        margin-top: 15px; 
     }
 }
 .services {
@@ -166,7 +175,7 @@ li:hover{
 
 .services div i {
     font-size: 3rem;
-    color: #4CAF50; /* Green icon color */
+    color: #4CAF50;
     margin-bottom: 20px;
 }
 
